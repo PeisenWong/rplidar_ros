@@ -25,19 +25,19 @@ include_directories(
 
 catkin_package()
 
-add_executable(rplidarNode src/node.cpp ${RPLIDAR_SDK_SRC})
-target_link_libraries(rplidarNode ${catkin_LIBRARIES})
+# add_executable(rplidarNode src/node.cpp ${RPLIDAR_SDK_SRC})
+# target_link_libraries(rplidarNode ${catkin_LIBRARIES})
 
-add_executable(rplidarNodeClient src/client.cpp)
-target_link_libraries(rplidarNodeClient ${catkin_LIBRARIES})
+# add_executable(rplidarNodeClient src/client.cpp)
+# target_link_libraries(rplidarNodeClient ${catkin_LIBRARIES})
 
-install(TARGETS rplidarNode rplidarNodeClient
-  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+# install(TARGETS rplidarNode rplidarNodeClient
+#   ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+#   RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+# )
 
-install(DIRECTORY launch rviz sdk
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-  USE_SOURCE_PERMISSIONS
-)
+# install(DIRECTORY launch rviz sdk
+#   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+#   USE_SOURCE_PERMISSIONS
+# )
