@@ -220,10 +220,10 @@ int main(int argc, char * argv[]) {
     nh_private.param<bool>("angle_compensate", angle_compensate, false);
     nh_private.param<std::string>("scan_mode", scan_mode, std::string());
     if(channel_type == "udp"){
-        nh_private.param<float>("scan_frequency", scan_frequency, 20.0);
+        nh_private.param<float>("scan_frequency", scan_frequency, 1.0);
     }
     else{
-        nh_private.param<float>("scan_frequency", scan_frequency, 10.0);
+        nh_private.param<float>("scan_frequency", scan_frequency, 1.0);
     }
 
     int ver_major = SL_LIDAR_SDK_VERSION_MAJOR;
